@@ -32,6 +32,11 @@
   <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
 </plugin>
 
+<gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription">
+    <string>For uploading receipt images</string>
+</gap:config-file>
+
+
   <icon src="icon.png"/>
   <platform name="android">
     <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
