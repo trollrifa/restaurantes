@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.opengate.restaurantes" version="1.2.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.opengate.restaurantes" version="1.3.0">
   <name>Restaurantes</name>
   <description>Aplicacion para restaurantes.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">Carlos Martinez</author>
@@ -26,9 +26,10 @@
   <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
   
-  <plugin name="cordova-plugin-camera">
-   <param name="CAMERA_USAGE_DESCRIPTION" value="Uso de la camara para fotos" />
-   <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Uso de la libreia para seleccion de imagenes" />
+<plugin name="cordova-plugin-media-capture" source="npm" spec="*">
+  <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access the camera." />
+  <variable name="MICROPHONE_USAGE_DESCRIPTION" value="App would like to access the microphone." />
+  <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access the library." />
 </plugin>
 
   <icon src="icon.png"/>
