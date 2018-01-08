@@ -26,13 +26,9 @@
   <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
   
-      <plugin name="org.apache.cordova.camera" spec="~2.3.0">
-    <variable name="CAMERA_USAGE_DESCRIPTION" value="Leer codigos QR." />
-    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Acceder a la fototeca." />
-</plugin>
-<plugin name="cordova-plugin-media-capture" source="npm" spec="*">
-    <variable name="CAMERA_USAGE_DESCRIPTION" value="Leer codigos QR." />
-    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Acceder a la fototeca." />
+  <plugin name="cordova-plugin-camera">
+   <param name="CAMERA_USAGE_DESCRIPTION" value="Uso de la camara para fotos" />
+   <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Uso de la libreia para seleccion de imagenes" />
 </plugin>
 
   <icon src="icon.png"/>
