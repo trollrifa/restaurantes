@@ -25,6 +25,16 @@
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
   <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+  
+      <plugin name="org.apache.cordova.camera" spec="~2.3.0">
+    <variable name="CAMERA_USAGE_DESCRIPTION" value="Leer codigos QR." />
+    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Acceder a la fototeca." />
+</plugin>
+<plugin name="cordova-plugin-media-capture" source="npm" spec="*">
+    <variable name="CAMERA_USAGE_DESCRIPTION" value="Leer codigos QR." />
+    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Acceder a la fototeca." />
+</plugin>
+
   <icon src="icon.png"/>
   <platform name="android">
     <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
@@ -73,18 +83,6 @@
     <splash src="www/res/screen/ios/Default-Portrait~ipad.png" platform="ios" width="768" height="1024"/>
     <splash src="www/res/screen/ios/Default@2x~iphone.png" platform="ios" width="640" height="960"/>
     <splash src="www/res/screen/ios/Default~iphone.png" platform="ios" width="320" height="480"/>
-    
-    <plugin name="org.apache.cordova.camera" spec="~2.3.0">
-    <variable name="CAMERA_USAGE_DESCRIPTION" value="Leer codigos QR." />
-    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Acceder a la fototeca." />
-</plugin>
-<plugin name="cordova-plugin-media-capture" source="npm" spec="*">
-    <variable name="CAMERA_USAGE_DESCRIPTION" value="Leer codigos QR." />
-    <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Acceder a la fototeca." />
-</plugin>
-
-
-
   </platform>
   <platform name="wp8">
     <icon src="www/res/icon/wp8/ApplicationIcon.png" platform="wp8" width="99" height="99"/>
