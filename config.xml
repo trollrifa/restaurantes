@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.opengate.restaurantes" version="1.6.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.opengate.restaurantes" version=“1.6.1”>
   <name>Restaurantes</name>
   <description>Aplicacion para restaurantes.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">Carlos Martinez</author>
@@ -45,8 +45,6 @@
 
   <icon src="icon.png"/>
   <platform name="android">
-
-<preference name="android-targetSdkVersion" value="26” />
     <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="www/res/icon/android/drawable-mdpi-icon.png" density="mdpi"/>
     <icon src="www/res/icon/android/drawable-hdpi-icon.png" density="hdpi"/>
